@@ -16,6 +16,6 @@
 
         <input type="submit" name="Inscribirse" required><br><br>
     </form>
-    <br><a href="listar.php">Ver Inscritos</a>
+    <br><a href="/deber/eventos/listar.php">Ver Inscritos</a>
 </body>
 </html>
