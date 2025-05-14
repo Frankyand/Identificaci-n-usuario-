@@ -18,7 +18,7 @@
         $correo = $_POST['correo'];
 
         $consulta = $conexion->prepare("UPDATE inscripciones SET nombre = ?, correo = ? WHERE id = ?");
-        $consulta->bind_param("ssi, $nombre, $correo, $id);
+        $consulta->bind_param("ssi", $nombre, $correo, $id);
         $consulta->execute(); 
         header("Location: listar.php");
         

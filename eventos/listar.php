@@ -1,5 +1,5 @@
 <?php
-require 'conexion.php'
+require 'conexion.php';
 $resultado = $conexion -> query("SELECT*FROM inscripciones");
 ?>
 
@@ -13,7 +13,7 @@ $resultado = $conexion -> query("SELECT*FROM inscripciones");
         <th>FECHA</th>
         <th>ACCIONES</th>
     </tr>
-    <?php while($registros = $resultados ->fetch_assoc()) { ?>
+    <?php while($registros = $resultado ->fetch_assoc()) { ?>
         <tr>
             <td><?= $registros['ID'] ?></td>
             <td><?= $registros['NOMBRE'] ?></td>
@@ -25,7 +25,7 @@ $resultado = $conexion -> query("SELECT*FROM inscripciones");
             </td>
         </tr>
 
-    <?php} ?>
+    <?php } ?>
 
 </table>
 ?>
