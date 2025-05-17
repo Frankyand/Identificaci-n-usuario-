@@ -14,8 +14,12 @@
         <label>Correo:</label><br>
         <input type="email" name="correo" required><br><br>
 
+        <label>Contraseña:</label><br>
+        <input type="password" name="contraseña" required><br><br>
+
         <input type="submit" name="Inscribirse" required><br><br>
     </form>
     <br><a href="listar.php">Ver Inscritos</a>
+    <br><a href="login.php">Volver al login</a>
 </body>
 </html>

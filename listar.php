@@ -10,6 +10,7 @@ $resultado = $conexion -> query("SELECT*FROM inscripciones");
         <th>id</th>
         <th>nombre</th>
         <th>correo</th>
+        <th>contraseña</th>
         <th>fecha_inscripcion</th>
         <th>acciones</th>
     </tr>
@@ -18,6 +19,7 @@ $resultado = $conexion -> query("SELECT*FROM inscripciones");
             <td><?= $registros['id'] ?></td>
             <td><?= $registros['nombre'] ?></td>
             <td><?= $registros['correo'] ?></td>
+            <td><?= $registros['contraseña'] ?></td>
             <td><?= $registros['fecha_inscripcion'] ?></td>
             <td>
                 <a href="editar.php?id=<?= $registros['id'] ?>">ACTUALIZAR</a>
