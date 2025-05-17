@@ -6,7 +6,7 @@
 
         $nombre = $_POST['nombre'];
         $correo = $_POST['correo'];
-        $contraseña = $_post['contraseña'];
+        $contraseña = $_POST['contraseña'];
 
         $consulta = $conexion ->prepare("INSERT INTO inscripciones (nombre, correo, contraseña) VALUES (?,?,?)");
 
