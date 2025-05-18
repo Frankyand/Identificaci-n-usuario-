@@ -12,7 +12,9 @@
 <body>
 
     <div class="cabecera">
-        CUERPO DE INGENIEROS DEL EJÉRCITO
+        <img src="logo.jpeg" alt="izquierda" class="logo">
+        <span class="titulo_c">CUERPO DE INGENIEROS DEL EJÉRCITO</span>
+        <img src="logo.jpeg" alt="derecha" class="logo">
     </div>
     
     <?php

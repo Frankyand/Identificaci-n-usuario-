@@ -6,6 +6,20 @@
     font-size: 24px;
     font-weight: bold;
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.titulo_c {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 70px;
 }
 
 .titulo {
