@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="estilos.css"> 
 </head>
 <body>
+
+    <div class="cabecera">
+        CUERPO DE INGENIEROS DEL EJÉRCITO
+    </div>
+    
     <?php
     if(isset($_SESSION['nombre']))
     {

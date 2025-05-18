@@ -11,9 +11,14 @@ $resultado = $conexion -> query("SELECT*FROM inscripciones");
     <link rel="stylesheet" href="estilos.css"> 
 </head>
 <body>
-    <h2>Lista de inscritos</h2>
-    <a href="formulario.php">Nueva Inscripción</a>
-    <table border="1" cellpadding ="5">
+
+    <div class="cabecera">
+        CUERPO DE INGENIEROS DEL EJÉRCITO
+    </div>
+
+    <h1 class="titulo">Lista de inscritos</h1>
+
+    <table class="tabla">
         <tr>
             <th>id</th>
             <th>nombre</th>
@@ -22,6 +27,7 @@ $resultado = $conexion -> query("SELECT*FROM inscripciones");
             <th>fecha_inscripcion</th>
             <th>acciones</th>
         </tr>
+
         <?php while($registros = $resultado ->fetch_assoc()) { ?>
             <tr>
                 <td><?= $registros['id'] ?></td>
@@ -38,6 +44,7 @@ $resultado = $conexion -> query("SELECT*FROM inscripciones");
         <?php } ?>
 
     </table>
+    <a href="formulario.php" class="nueva-inscripcion">Nueva inscripción</a>
 
 </body>
 </html>

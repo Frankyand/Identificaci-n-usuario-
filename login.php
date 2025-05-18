@@ -3,18 +3,25 @@ session_start();
 ?>
 
 <!DOCTYPE html>
+<html lang="es">
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h2>Inicio de sesión</h2>
+
+    <div class="cabecera">
+        CUERPO DE INGENIEROS DEL EJÉRCITO
+    </div>
+
+    <h1 class="titulo">Inicio de sesión</h1>
     <form method="POST" action="procesar.php">
-        <label for="nombre"> Usuario:</label>
+        <label for="nombre"> Usuario:</label><br>
         <input type="text" id="nombre" name="nombre" required><br><br>
 
-        <label for="contraseña">Contraseña:</label>
+        <label for="contraseña">Contraseña:</label><br>
         <input type="password" id="contraseña" name="contraseña" required><br><br>
 
         <input type="submit" value="Ingresar">

@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDENTIFICACION</title>
+    <title>INSCRIPCIÓN</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <H2>INSCRIPCION DE USUARIO</H2>
+
+    <div class="cabecera">
+        CUERPO DE INGENIEROS DEL EJÉRCITO
+    </div>
+
+    <h1 class= "titulo">INSCRIPCION DE USUARIO</h1>
     <form action="procesar.php" method="Post">
         <label>Nombre:</label><br>
         <input type="text" name="nombre" required><br><br>
